@@ -34,12 +34,6 @@ def pipes():
     yh=random.randint(2,23)
 
     return yh
-def bird():
-    pass
-    bx=5
-    by=5
-
-    return by
 
 px=0
 py=0
