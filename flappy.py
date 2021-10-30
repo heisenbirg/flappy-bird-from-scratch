@@ -41,7 +41,7 @@ by=12
 bx=20
 gameover=False
 while(not gameover):
-    score,width=draw(px,py,yh,by,bx)
+    width=draw(px,py,yh,by,bx)
     px+=1
     if(px>width):
         px=0
