@@ -6,7 +6,7 @@ def draw(px,py,yh,by,bx):
     height,width=25,25
     gameover=False
 
-    score=0
+    
 
     for y in range(height+1):
         for x in range(width+1):
@@ -25,10 +25,9 @@ def draw(px,py,yh,by,bx):
 
                 else:
                     print(" ",end=" ")
-                if px>bx:
-                    score+=1
+                
         print("")
-    return score,width
+    return width
 
 def pipes():
     yh=random.randint(2,23)
@@ -58,6 +57,6 @@ while(not gameover):
         bx=bx+1
     if bx==px and (by <yh-1 or by>yh+1):
         gameover = True
-        print(score)
+        
         break
     time.sleep(0.3)
