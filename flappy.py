@@ -40,6 +40,7 @@ yh=3
 by=12
 bx=20
 gameover=False
+score = 0
 while(not gameover):
     width=draw(px,py,yh,by,bx)
     px+=1
@@ -55,8 +56,11 @@ while(not gameover):
         bx=bx-1
     elif k.is_pressed("right"):
         bx=bx+1
+    if bx < px:
+        score += 1
     if bx==px and (by <yh-1 or by>yh+1):
         gameover = True
+        print("score=", score//5)
         
         break
     time.sleep(0.3)
